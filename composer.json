@@ -1,0 +1,42 @@
+{
+    "name": "melhor-envio/sdk-example",
+    "description": "SDK Example",
+    "keywords": [
+        "melhor-envio",
+        "sdk-example"
+    ],
+    "homepage": "https://github.com/melhor-envio/sdk-example",
+    "license": "MIT License (MIT)",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Luan",
+            "email": "luan.einhardt@melhorenvio.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MelhorEnvio\\SdkExample\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MelhorEnvio\\SdkExample\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
